@@ -74,7 +74,7 @@ class PostsURLTests(TestCase):
             '/create/': 'posts/create_post.html',
             '/unexisted_page/': 'core/404.html',
         }
-        
+
         for url, template in templates_url_names.items():
             with self.subTest(url=url):
                 response = self.post_author.get(url)
